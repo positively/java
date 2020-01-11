@@ -1,0 +1,15 @@
+package polimophism.v1;
+
+public class Dog extends Animal {
+    public Dog(String name) {
+        super(name);
+    }
+
+    @Override
+    void voice() {
+        System.out.println(
+                String.format(
+                        "polimophism.v1.Animal [%s] says: %s",
+                        getName(), "WOF-WOF"));
+    }
+}
